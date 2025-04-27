@@ -3,14 +3,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:shopsphere/core/const/const.dart';
 import 'package:shopsphere/core/cubit/appCubit/appCubit.dart';
-import 'package:shopsphere/core/cubit/logincubit/loginCubit.dart';
 import 'package:shopsphere/core/data/local/cache_helper.dart';
-import 'package:shopsphere/features/screens/homePage.dart';
+import 'package:shopsphere/features/bottomnavscreens/presentation/homePage.dart';
 
 import 'core/cubit/observal.dart';
-import 'core/data/api/api.dart';
-import 'core/data/api/paymentapi.dart';
-import 'features/screens/splashscreen.dart';
+import 'core/network/api/api.dart';
+import 'features/payment/data/repository/paymentapi.dart';
+import 'features/auth/cubit/logincubit/loginCubit.dart';
+import 'features/splash/splashscreen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized(); // ✅ Add this line
